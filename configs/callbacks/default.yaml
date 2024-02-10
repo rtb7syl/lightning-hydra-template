@@ -1,9 +1,14 @@
 defaults:
+  - sampling_callback
   - model_checkpoint
   - early_stopping
   - model_summary
   - rich_progress_bar
   - _self_
+
+sampling_callback:
+  img_size: 64
+  out: ${paths.output_dir}
 
 model_checkpoint:
   dirpath: ${paths.output_dir}/checkpoints

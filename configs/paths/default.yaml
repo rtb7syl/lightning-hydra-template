@@ -3,7 +3,7 @@
 # you can replace it with "." if you want the root to be the current working directory
 #root_dir: ${oc.env:PROJECT_ROOT}
 
-root_dir: /Users/rito/Projects/test_debug/lightning-hydra-template
+root_dir: /Users/rito/Projects/ddpm-lightning-hydra/lightning-hydra-template
 
 # path to data directory
 data_dir: ${paths.root_dir}/data/

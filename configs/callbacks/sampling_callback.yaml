@@ -1,0 +1,4 @@
+sampling_callback:
+  _target_: src.callbacks.sampling_callback.SamplingCallback
+  img_size: 64
+  out: ${paths.output_dir}

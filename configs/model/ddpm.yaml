@@ -1,7 +1,5 @@
 _target_: src.models.ddpm_module.DDPMLitModule
 
-out: ${paths.output_dir}
-
 optimizer:
   _target_: torch.optim.Adam
   _partial_: true
@@ -19,8 +17,6 @@ net:
   _target_: src.models.components.ddpm_simple_unet.SimpleUnetReverseProcess
 
 # compile model for faster training with pytorch 2.0
-compile: true
+compile: false
 
 T: 300
-
-img_size: 64
